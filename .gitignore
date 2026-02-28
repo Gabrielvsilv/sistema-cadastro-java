@@ -1,0 +1,10 @@
+# Ignorar o arquivo de dados com CPFs reais
+lista_pessoal.txt
+
+# Ignorar a pasta onde o Java compila o código
+bin/
+
+# Ignorar arquivos de configuração do Eclipse (opcional, mas recomendado)
+.settings/
+.project
+.classpath
