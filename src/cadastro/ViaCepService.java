@@ -18,7 +18,7 @@ public class ViaCepService {
 			HttpClient cliente = HttpClient.newHttpClient();
 
 			HttpRequest requisicao = HttpRequest.newBuilder().uri(URI.create(urlCaminho))
-					.timeout(Duration.ofSeconds(10)) // Evita que o programa fique "pendurado" se a internet cair
+					.timeout(Duration.ofSeconds(10))
 					.build();
 
 			HttpResponse<String> resposta = cliente.send(requisicao, HttpResponse.BodyHandlers.ofString());
